@@ -1,0 +1,27 @@
+#include "../std_lib_facilities.h"
+
+int main() {
+    cout << "Enter three strings: ";
+    string v1, v2, v3;
+    cin >> v1 >> v2 >> v3;
+    string tmp;
+    if (v1 > v2) {
+        tmp = v1;
+        v1 = v2;
+        v2 = tmp;
+    }
+    if (v1 > v3) {
+        tmp = v1;
+        v1 = v3;
+        v3 = tmp;
+    }
+    if (v2 > v3) {
+        tmp = v2;
+        v2 = v3;
+        v3 = tmp;
+    }
+    cout << v1 << ", " << v2 << ", " << v3 << '\n';
+
+
+	return 0;
+}
